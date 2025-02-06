@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+ul.topcenter {
+  display: flex;
+  column-gap: 50px;
+}
+
+ul.topright {
+  display: flex;
+  column-gap: 30px;
+}
+
+.subText {
+  text-align: center;
+  margin: 20px 0 25px 0;
+}
+
+.imgArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productfea {
+  text-align: center;
+}
+
+.productfea h4 {
+  padding: 20px 0;
+}
+
+.op-content {
+  background: #F4F5F7;
+  padding: 20px 15px;
+}
+
+.op-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.op-imgbox img {
+  width: 100%;
+}
+
+.op-title {
+  text-align: center;
+  padding: 30px;
+}
+
+.op-prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.op-content p {
+  color: #898989;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.op-price-dis {
+  color: #B0B0B0;
+  text-decoration: line-through;
+}
+
+.dis-pin {
+  background: #E97171;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.op-imgbox {
+  position: relative;
+}
+
+.ot-boxes {
+  position: relative;
+}
+
+.ot-boxes:hover .op-over-box {
+  opacity: 1;
+}
+
+.op-over-box {
+  background: #3a3a3ac7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: .4s;
+}
+
+.op-share-icons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.op-share {
+  display: flex;
+  justify-content: space-between;
+  max-width: 245px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+button.op-ov-btn {
+  background: #fff;
+  padding: 15px 35px;
+  color: #B88E2F;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dis-pin.new-pin {
+  background: #2ec1ac;
+}
+
+.FuniroFurniture-title {
+  padding: 50px 0 20px 0;
+  text-align: center;
+}
+
+.CarouselSizeBox {
+  background: #FCF8F3;
+  padding: 30px 0;
+  margin: 50px 0;
+}
+
+.row-furniture {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.carouselContent-bx {
+  position: absolute;
+  bottom: 0;
+  background: #ffffffc9;
+  padding: 20px;
+  left: 6%;
+  bottom: 6%;
+}
+
+.footerpage {
+  border-top: 1px solid #D9D9D9;
+  margin-top: 60px;
+  padding: 50px 0 20px 0;
+}
+
+.imgBox-carousel {
+  position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .op-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .row-furniture {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+  }
+
+  .op-title {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .op-content p {
+    font-size: 14px;
+  }
+
+  button.op-ov-btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .dis-pin {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+.heroText{
+  width: 34rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border-radius: 6px;
+  padding-top: 4rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
+
+.heroText h6{
+  font-weight: bold;
+  line-height: 2.4rem;
+  font-weight: 600;
+  font-family:'sans-serif';
+}
+
+.heroText h3{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #B88E2F;
+  line-height: 3rem;
+}
+
+
+.heroText .buyBtn{
+  background-color: #B88E2F;
+  padding: 1rem 3rem 1rem 3rem;
+  color: white;
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+/* @layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+ */
